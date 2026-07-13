@@ -9,6 +9,16 @@ Threads AI副業リサーチBOT（運営者：AI副業自動化ラボ）の
 保持期間）はすべて正式値を反映済みで、プレースホルダーは解消済みです。`python scripts/validate_site.py --release`
 がPASSすることを公開の条件とします（本README「6. 公開前検証方法」参照）。
 
+**GitHub Pages公開確認済み（公開確認日：2026年7月13日）**：ユーザーによるcommit・push・GitHub Pages
+有効化が完了し、以下のURLで公開されていることをHTTP応答（ステータス・Content-Type・タイトル等）で確認済みです。
+
+- トップページ：公開済み（https://ai-automation-lab-jp.github.io/threads-ai-research-bot-legal/ ）
+- プライバシーポリシー：公開済み（.../privacy.html）
+- データ削除案内：公開済み（.../data-deletion.html）
+
+Meta App Reviewの「プライバシーポリシーURL」「Data Deletion Instructions URL」欄へ、上記2URLを
+ユーザーが入力できる準備が整っています。**Meta App Reviewへの申請自体は未実施です。**
+
 ## 1. このリポジトリの目的
 
 - Meta App Reviewに提出する「プライバシーポリシーURL」「Data Deletion Instructions URL」として
