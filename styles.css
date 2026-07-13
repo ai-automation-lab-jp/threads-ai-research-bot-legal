@@ -1,0 +1,297 @@
+/* Threads AI副業リサーチBOT - 公開情報サイト共通スタイル
+   外部フォント・外部リソースは使用しません。 */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #4a4a4a;
+  --color-link: #0b4f8a;
+  --color-link-visited: #5b2a8a;
+  --color-border: #d0d0d0;
+  --color-surface: #f5f6f7;
+  --color-accent: #0b4f8a;
+  --color-focus: #d4380d;
+  --max-width: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #121212;
+    --color-text: #f0f0f0;
+    --color-muted: #c2c2c2;
+    --color-link: #7cc0ff;
+    --color-link-visited: #c9a6f5;
+    --color-border: #3a3a3a;
+    --color-surface: #1d1e20;
+    --color-accent: #7cc0ff;
+    --color-focus: #ff8a5c;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text: #f0f0f0;
+  --color-muted: #c2c2c2;
+  --color-link: #7cc0ff;
+  --color-link-visited: #c9a6f5;
+  --color-border: #3a3a3a;
+  --color-surface: #1d1e20;
+  --color-accent: #7cc0ff;
+  --color-focus: #ff8a5c;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #4a4a4a;
+  --color-link: #0b4f8a;
+  --color-link-visited: #5b2a8a;
+  --color-border: #d0d0d0;
+  --color-surface: #f5f6f7;
+  --color-accent: #0b4f8a;
+  --color-focus: #d4380d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  z-index: 100;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 0.15em;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.site-header,
+.site-footer {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-footer {
+  border-bottom: none;
+  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
+}
+
+.header-inner,
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.site-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.lang-switch {
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.lang-switch a {
+  margin-right: 1rem;
+}
+
+nav.primary-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav.primary-nav a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem 1.25rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2.25rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+section[lang] {
+  padding-top: 0.5rem;
+}
+
+.lang-block {
+  border-top: 3px solid var(--color-border);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+}
+
+.lang-block:first-of-type {
+  border-top: none;
+  margin-top: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+th,
+td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--color-surface);
+}
+
+.placeholder {
+  font-weight: 700;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-muted);
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.notice {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  padding: 0.9rem 1rem;
+  margin: 1.25rem 0;
+}
+
+.meta-dates {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.footer-inner p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+@media (max-width: 40rem) {
+  main,
+  .header-inner,
+  .footer-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .lang-switch {
+    display: none;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #333;
+  }
+}

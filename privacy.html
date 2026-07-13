@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Threads AI副業リサーチBOT</title>
+<meta name="description" content="Threads AI副業リサーチBOTのプライバシーポリシー。取得する情報、取得しない情報、保存場所、保持期間、削除要求の方法などを日本語と英語で記載しています。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none';">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ / Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="site-title"><a href="index.html">Threads AI副業リサーチBOT 公開情報サイト</a></p>
+    <p class="lang-switch"><a href="#ja">日本語</a><a href="#en">English</a></p>
+    <nav class="primary-nav" aria-label="サイト内ナビゲーション / Site navigation">
+      <ul>
+        <li><a href="index.html">トップページ / Top</a></li>
+        <li><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></li>
+        <li><a href="data-deletion.html">データ削除案内 / Data Deletion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="ja" lang="ja" class="lang-block">
+<h1>プライバシーポリシー</h1>
+
+<div class="notice">
+<p>本ポリシーは、データ処理の法的根拠や適用法令への適合を断定するものではありません。実際の運用にあたっては、必要に応じて運営者が専門家へ相談のうえ内容を確定してください。</p>
+</div>
+
+<h2>1. 運営者</h2>
+<p>AI副業自動化ラボ（個人運営）</p>
+
+<h2>2. 対象サービス</h2>
+<p>Threads AI副業リサーチBOT（Threads公式APIを利用した、個人運用の市場調査支援ツール）</p>
+
+<h2>3. 取得する情報</h2>
+<p>Threads公式APIを通じて、以下の情報のみを取得します。</p>
+<ul>
+  <li>公開Threads投稿</li>
+  <li>投稿ID</li>
+  <li>投稿本文</li>
+  <li>投稿日時</li>
+  <li>permalink（投稿URL）</li>
+  <li>username（投稿者のユーザー名）</li>
+  <li>media_type（メディア種別）</li>
+  <li>検索に使用したキーワード</li>
+  <li>Threads公式APIが返す、取得可能な公開フィールド</li>
+  <li>投稿本文から抽出したURL</li>
+  <li>抽出したURLの導線分類結果</li>
+  <li>訴求語句の検出結果</li>
+  <li>優先度スコア（機械的なルールベースで算出）</li>
+  <li>重複投稿の判定結果</li>
+</ul>
+
+<h2>4. 取得しない情報</h2>
+<ul>
+  <li>Threadsのパスワード</li>
+  <li>Instagramのパスワード</li>
+  <li>Facebookのパスワード</li>
+  <li>非公開投稿</li>
+  <li>ダイレクトメッセージ（DM）</li>
+  <li>LINE内部の情報（トーク内容等）</li>
+  <li>有料note等の本文</li>
+  <li>PDF本文</li>
+  <li>利用者端末内の個人ファイル</li>
+  <li>正確な位置情報</li>
+  <li>決済情報</li>
+  <li>投稿者の信用スコア</li>
+  <li>投稿内容の真偽判定結果</li>
+  <li>個人の信用評価</li>
+</ul>
+
+<h2>5. 情報の取得方法</h2>
+<p>Threads公式API（公開投稿の検索機能）を通じてのみ情報を取得します。非公式な手段、Webスクレイピング、ブラウザ自動操作は使用しません。</p>
+
+<h2>6. 利用目的</h2>
+<p>取得した情報は、以下の目的にのみ利用します。</p>
+<ul>
+  <li>AI副業関連の公開投稿・訴求手法・外部導線の傾向を、人間が分析するための一次スクリーニング</li>
+  <li>手動分析の優先順位付けのための優先度スコアの算出（機械的なルールベース集計であり、投稿内容の真偽・投稿者の信用度・収益性を判定するものではありません）</li>
+</ul>
+<p>取得した情報を、上記目的以外（第三者への販売・提供、広告、自動投稿・自動アクション等）に利用することはありません。</p>
+
+<h2>7. 保存場所</h2>
+<p>取得した情報は、運営者が管理するローカル環境のファイルシステムにのみ保存します。外部のデータベースやクラウドサービスは使用していません。GitHubリポジトリへ実データをコミットすることもありません。</p>
+
+<h2>8. 保持期間</h2>
+<p>取得・生成したデータは、以下を保存上限の目安として扱います。</p>
+<table>
+<caption>データ種別ごとの保持期間（保存上限）</caption>
+<thead>
+<tr><th>データ種別</th><th>保持期間（上限）</th></tr>
+</thead>
+<tbody>
+<tr><td>raw JSON</td><td>取得日から最大90日</td></tr>
+<tr><td>processed JSON</td><td>取得日から最大180日</td></tr>
+<tr><td>人間向けJSON</td><td>取得日から最大365日</td></tr>
+<tr><td>CSV</td><td>取得日から最大365日</td></tr>
+<tr><td>Markdownレポート</td><td>取得日から最大365日</td></tr>
+<tr><td>ログ</td><td>生成日から最大90日</td></tr>
+<tr><td>アクセストークン</td><td>有効期限、失効、連携解除、または不要となるまで</td></tr>
+</tbody>
+</table>
+<p>上記はいずれも保存上限であり、無期限保存や永久保存を行うものではありません。現段階では自動削除の仕組みは実装されておらず、運営者が上記の上限を目安に定期的に保存状況を確認し、手動で削除します。削除依頼があった場合も、下記「12. 削除要求」に基づき対象を確認したうえで手動で削除します。</p>
+<p>なお、法令上の対応またはセキュリティインシデント対応等のために必要と判断される場合、上記の上限を超えて必要最小限の期間データを保存する可能性があります。この場合であっても、特定の法令への適合性を断定するものではありません。</p>
+
+<h2>9. 第三者提供</h2>
+<p>取得した情報を第三者へ販売・提供・共有することはありません。</p>
+
+<h2>10. 外部サービス</h2>
+<p>本ツールはThreads公式API以外の外部サービスと連携していません。本サイト自体も、外部スクリプト・外部フォント・アクセス解析・広告等の外部リソースを一切読み込みません。</p>
+
+<h2>11. セキュリティ対策</h2>
+<ul>
+  <li>アクセストークン等の認証情報は、APIリクエストのAuthorizationヘッダー経由でのみ送信します。</li>
+  <li>アクセストークン等の認証情報を、ソースコード・ログ・成果物・本サイトへ記載することはありません。</li>
+  <li>取得した情報は、Git管理対象外のローカルディレクトリにのみ保存し、リポジトリへコミットしません。</li>
+</ul>
+
+<h2>12. 削除要求</h2>
+<p>ご自身の投稿がこのツールの取得対象に含まれており、データの削除を希望される場合は、下記「13. 問い合わせ方法」までご連絡ください。具体的な手順は<a href="data-deletion.html">データ削除案内</a>をご確認ください。</p>
+
+<h2>13. 問い合わせ方法</h2>
+<p><a href="mailto:ai.automation.lab.jp@gmail.com">ai.automation.lab.jp@gmail.com</a></p>
+
+<h2>14. 未成年者に関する扱い</h2>
+<p>本ツールは、投稿者の年齢確認を行わず、未成年者を含む投稿者を意図的に区別する機能を持ちません。未成年者に関する配慮が必要と判断される情報が確認された場合は、個別に削除等の対応を検討します。</p>
+
+<h2>15. ポリシー変更</h2>
+<p>本ポリシーの内容は、運営者の判断により予告なく変更されることがあります。重要な変更がある場合は、本ページの更新をもって周知します。</p>
+
+<h2>16. 発効日</h2>
+<p>2026年7月13日</p>
+
+<h2>17. 最終更新日</h2>
+<p>2026年7月13日</p>
+</section>
+
+<section id="en" lang="en" class="lang-block">
+<h1>Privacy Policy</h1>
+
+<div class="notice">
+<p>This policy does not assert a specific legal basis for data processing, nor does it declare compliance with any particular law or regulation. The operator will consult a qualified professional as needed before finalizing operational details.</p>
+</div>
+
+<h2>1. Operator</h2>
+<p>AI副業自動化ラボ (an individually operated project)</p>
+
+<h2>2. Service covered</h2>
+<p>Threads AI副業リサーチBOT — a personally operated market-research tool that uses the official Threads API.</p>
+
+<h2>3. Information collected</h2>
+<p>Through the official Threads API, only the following information is collected.</p>
+<ul>
+  <li>Public Threads posts</li>
+  <li>Post ID</li>
+  <li>Post text</li>
+  <li>Post timestamp</li>
+  <li>Permalink (post URL)</li>
+  <li>Username of the poster</li>
+  <li>Media type</li>
+  <li>Search keywords used</li>
+  <li>Other public fields returned by the official Threads API</li>
+  <li>URLs extracted from post text</li>
+  <li>Classification of extracted URLs (link type)</li>
+  <li>Detected marketing/claim phrases</li>
+  <li>Priority score (calculated by a mechanical, rule-based method)</li>
+  <li>Duplicate-post determination results</li>
+</ul>
+
+<h2>4. Information not collected</h2>
+<ul>
+  <li>Threads password</li>
+  <li>Instagram password</li>
+  <li>Facebook password</li>
+  <li>Private (non-public) posts</li>
+  <li>Direct messages</li>
+  <li>LINE internal content (chat content, etc.)</li>
+  <li>Full text of paid content such as paid note articles</li>
+  <li>PDF content</li>
+  <li>Personal files stored on a user's device</li>
+  <li>Precise location data</li>
+  <li>Payment information</li>
+  <li>Any credibility score for a poster</li>
+  <li>Any true/false determination of post content</li>
+  <li>Any personal credit or trust evaluation</li>
+</ul>
+
+<h2>5. How information is collected</h2>
+<p>Information is collected only through the official Threads API's public post search functionality. No unofficial methods, web scraping, or browser automation are used.</p>
+
+<h2>6. Purpose of use</h2>
+<p>Collected information is used only for the following purposes.</p>
+<ul>
+  <li>Initial screening, for human review, of trends in AI side-business related public posts, marketing phrasing, and outbound links</li>
+  <li>Calculating a priority score to help prioritize manual review (a mechanical, rule-based aggregation — not a determination of the truthfulness, credibility, or profitability of any post or poster)</li>
+</ul>
+<p>Collected information is not used for any purpose beyond the above, including sale or provision to third parties, advertising, or automated posting/actions.</p>
+
+<h2>7. Where data is stored</h2>
+<p>Collected information is stored only on the local file system of an environment managed by the operator. No external database or cloud service is used. Real collected data is never committed to a GitHub repository.</p>
+
+<h2>8. Retention period</h2>
+<p>Collected and generated data is subject to the following maximum retention periods.</p>
+<table>
+<caption>Retention period (maximum) by data type</caption>
+<thead>
+<tr><th>Data type</th><th>Retention period (maximum)</th></tr>
+</thead>
+<tbody>
+<tr><td>Raw JSON</td><td>Up to 90 days from collection</td></tr>
+<tr><td>Processed JSON</td><td>Up to 180 days from collection</td></tr>
+<tr><td>Human-readable JSON</td><td>Up to 365 days from collection</td></tr>
+<tr><td>CSV files</td><td>Up to 365 days from collection</td></tr>
+<tr><td>Markdown reports</td><td>Up to 365 days from collection</td></tr>
+<tr><td>Logs</td><td>Up to 90 days from generation</td></tr>
+<tr><td>Access tokens</td><td>Until expiration, revocation, disconnection, or no longer needed</td></tr>
+</tbody>
+</table>
+<p>These figures are maximum retention periods, not indefinite or permanent storage. No automated deletion system is currently implemented. Retention is currently managed through periodic manual review by the operator, who deletes data once it reaches the applicable limit above. Deletion requests are also processed manually, after confirming the relevant data, as described in "12. Deletion requests" below.</p>
+<p>Where required for legal compliance or security-incident response, data may be retained beyond the periods above for the minimum time necessary. This statement does not assert compliance with any specific law or regulation.</p>
+
+<h2>9. Third-party sharing</h2>
+<p>Collected information is not sold, provided, or shared with any third party.</p>
+
+<h2>10. External services</h2>
+<p>This tool does not integrate with any external service other than the official Threads API. This website itself does not load any external scripts, fonts, analytics, or advertising resources.</p>
+
+<h2>11. Security measures</h2>
+<ul>
+  <li>Access tokens and other credentials are sent only via the Authorization header of API requests.</li>
+  <li>Access tokens and other credentials are never written into source code, logs, generated output, or this website.</li>
+  <li>Collected information is stored only in local directories excluded from Git and is never committed to the repository.</li>
+</ul>
+
+<h2>12. Deletion requests</h2>
+<p>If your post is included in data collected by this tool and you would like it deleted, please contact us using the method in "13. Contact" below. See the <a href="data-deletion.html">Data Deletion Instructions</a> page for the detailed procedure.</p>
+
+<h2>13. Contact</h2>
+<p><a href="mailto:ai.automation.lab.jp@gmail.com">ai.automation.lab.jp@gmail.com</a></p>
+
+<h2>14. Minors</h2>
+<p>This tool does not verify the age of any poster and has no function to intentionally distinguish minors from other posters. If information requiring special consideration regarding a minor is identified, it will be handled, including possible deletion, on a case-by-case basis.</p>
+
+<h2>15. Changes to this policy</h2>
+<p>The content of this policy may change without prior notice, at the operator's discretion. Material changes will be announced by updating this page.</p>
+
+<h2>16. Effective date</h2>
+<p>July 13, 2026</p>
+
+<h2>17. Last updated</h2>
+<p>July 13, 2026</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Threads AI副業リサーチBOT 公開情報サイト（運営者：AI副業自動化ラボ）</p>
+    <nav aria-label="フッターナビゲーション / Footer navigation">
+      <ul style="list-style:none; display:flex; flex-wrap:wrap; gap:0.25rem 1.25rem; padding:0; margin:0.5rem 0 0 0;">
+        <li><a href="index.html">トップページ / Top</a></li>
+        <li><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></li>
+        <li><a href="data-deletion.html">データ削除案内 / Data Deletion</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
